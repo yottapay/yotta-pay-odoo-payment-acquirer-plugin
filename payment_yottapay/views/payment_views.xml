@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="acquirer_form_yottapay" model="ir.ui.view">
+      <field name="name">acquirer.form.yottapay</field>
+      <field name="model">payment.acquirer</field>
+      <field name="inherit_id" ref="payment.acquirer_form"/>
+      <field name="arch" type="xml">
+        <xpath expr='//group[@name="acquirer"]' position='inside'>
+          <group attrs="{'invisible': [('provider', '!=', 'yottapay')]}">
+            <field name="yottapay_merchant_identifier" attrs="{'required':[('provider', '=', 'yottapay'), ('state', '!=', 'disabled')]}"/>
+            <field name="yottapay_payment_key" attrs="{'required':[('provider', '=', 'yottapay'), ('state', '!=', 'disabled')]}" password="True"/>
+            <a colspan="2" href="https://yottapay.co.uk/paymentgateway/" target="_blank">How to connect Yotta Pay API?</a>
+          </group>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

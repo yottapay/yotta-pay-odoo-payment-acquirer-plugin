@@ -1,0 +1,473 @@
+<link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+
+<style>
+    .yotta-shop-info {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        font-family: 'Noto Sans';
+    }
+
+    .yotta-div {
+        width: 85%;
+        max-width: 1280px;
+        margin: 60px auto;
+    }
+
+    .yotta-skyrocket-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .yotta-skyrocket-img {
+        width: 50%;
+    }
+
+    .yotta-skyrocket-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .yotta-skyrocket-text {
+        padding: 0 5%;
+        width: 40%;
+    }
+
+    .yotta-more-text {
+        width: 100%;
+        padding: 20px 5%;
+    }
+
+    .yotta-title {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 140%;
+        margin: 0 0 20px;
+    }
+
+    .yotta-desc {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
+        color: #7E878C;
+    }
+
+    .yotta-desc li {
+        list-style: none;
+        margin: 10px auto;
+        line-height: 24px;
+    }
+
+    .yotta-desc li::before {
+        content: "·";
+        font-size: 30px;
+        vertical-align: middle;
+        line-height: 24px;
+        padding-right: 5px;
+    }
+
+    .yotta-blue-span {
+        color: #00a0ff;
+        text-decoration: underline;
+    }
+
+    .yotta-divider {
+        width: 100%;
+        border: 1px solid #EDEDED;
+        margin: 20px 0;
+    }
+
+    .yotta-list ul {
+        margin: 20px 0 0;
+    }
+
+    .yotta-list li {
+        list-style: none;
+        margin: 20px 0 0 -40px;
+        padding: 0px 0 0px 50px;
+        background-image: url("list-icon.png");
+        background-size: auto 17px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .yotta-center-text {
+        text-align: center;
+    }
+
+    .yotta-info-columns {
+        margin: 60px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .yotta-info-column {
+        width: 20%;
+        background: #FFFFFF;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        padding: 20px 2%;
+        align-self: stretch;
+    }
+
+    .yotta-info-column-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .yotta-info-column-img {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .yotta-info-column-img img {
+        width: 100%;
+    }
+
+    .yotta-grey-span {
+        color: #7E878C;
+    }
+
+    .yotta-info-column-sub ul {
+        margin: 20px 0 0;
+    }
+
+    .yotta-info-column-sub li {
+        font-size: 10px;
+        list-style: none;
+        line-height: 16px;
+    }
+
+    .yotta-info-column-sub li::before {
+        content: "\2022";
+        color: #21CC5B;;
+        font-size: 35px;
+        padding-right: 14px;
+        margin-left: -30px;
+        vertical-align: middle;
+    }
+
+    @media (max-width: 1100px) {
+        .yotta-div {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .yotta-title {
+            font-size: 20px;
+            margin: 0 0 15px;
+        }
+
+        .yotta-desc {
+            font-size: 14px;
+        }
+
+        .yotta-info-columns {
+            margin: 0 auto 40px;
+            flex-wrap: wrap;
+        }
+
+        .yotta-info-column {
+            width: 40%;
+            padding: 20px 4%;
+            margin-top: 40px;
+        }
+
+        .yotta-info-column-title {
+            margin-bottom: 15px;
+        }
+
+        .yotta-info-column-sub ul {
+            margin: 15px 0 0;
+        }
+
+        .yotta-list ul {
+            margin: 15px 0 0;
+        }
+
+        .yotta-list li {
+            margin: 8px 0 0 -40px;
+            font-size: 14px;
+            line-height: 14px;
+            background-size: auto 14px;
+            padding: 0px 0 0px 35px;
+        }
+
+        .yotta-divider {
+            margin: 15px 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .yotta-div {
+            width: 95%;
+            max-width: 420px;
+            margin: 40px auto;
+        }
+
+        .yotta-skyrocket-div {
+            flex-wrap: wrap;
+        }
+
+        .yotta-skyrocket-img {
+            width: 100%;
+        }
+
+        .yotta-skyrocket-img {
+            width: 100%;
+            order: 1;
+        }
+
+        .yotta-skyrocket-text {
+            padding: 20px 30px;
+            width: 100%;
+            order: 2;
+        }
+
+        .yotta-title {
+            margin: 0 0 20px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .yotta-desc {
+            line-height: 20px;
+        }
+
+        .yotta-info-column {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .yotta-info-column-sub li {
+            font-size: 12px;
+        }
+
+        .yotta-more-text {
+            padding: 20px 30px;
+        }
+
+        .yotta-center-text {
+            text-align: left;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .yotta-desc li {
+            margin: 10px 0 10px -27px;
+            line-height: 20px;
+        }
+
+        .yotta-desc li::before {
+            margin-left: -13px;
+        }
+
+        .yotta-info-column-title {
+            margin-bottom: 20px;
+        }
+
+        .yotta-divider {
+            margin: 20px 0;
+        }
+
+        .yotta-mobile-shadow {
+            padding: 20px 30px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+        }
+    }
+</style>
+
+<section class="yotta-shop-info">
+    <div class="yotta-div yotta-skyrocket-div">
+        <div class="yotta-skyrocket-img">
+            <img src="skyrocket.png" alt="skyrocket.png" />
+        </div>
+        <div class="yotta-skyrocket-text">
+            <div class="yotta-title">
+                Skyrocket your conversion rates with three clicks online checkout
+            </div>
+            <div class="yotta-desc">
+                Eliminate the fuss of online transactions. <br />
+                No card numbers, expiry dates or security codes. <br />
+                Customers pay with UK mobile banking.
+            </div>
+        </div>
+    </div>
+
+    <div class="yotta-div">
+        <div class="yotta-center-text">
+            <div class="yotta-mobile-shadow">
+                <div class="yotta-title">
+                    Built to make e-commerce simple
+                </div>
+                <div class="yotta-desc">
+                    Superfast frictionless online/mobile checkout. Payment done in a few seconds. <br />
+                    Win more customers with a perfect online experience.
+                </div>
+            </div>
+        </div>
+        <div class="yotta-info-columns">
+            <div class="yotta-info-column">
+                <div class="yotta-info-column-title">
+                    <span class="yotta-grey-span">Step</span> 1 / 4
+                </div>
+                <div class="yotta-info-column-img">
+                    <img src="step1.png" alt="step1.png" />
+                </div>
+                <div class="yotta-info-column-sub">
+                    <ul>
+                        <li>
+                            Client's mobile browser.<br />
+                            Payment summary page.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="yotta-info-column">
+                <div class="yotta-info-column-title">
+                    <span class="yotta-grey-span">Step</span> 2 / 4
+                </div>
+                <div class="yotta-info-column-img">
+                    <img src="step2.png" alt="step2.png" />
+                </div>
+                <div class="yotta-info-column-sub">
+                    <ul>
+                        <li>
+                            Client's mobile browser. <br />
+                            Client is invited to choose the bank app.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="yotta-info-column">
+                <div class="yotta-info-column-title">
+                    <span class="yotta-grey-span">Step</span> 3 / 4
+                </div>
+                <div class="yotta-info-column-img">
+                    <img src="step3.png" alt="step3.png" />
+                </div>
+                <div class="yotta-info-column-sub">
+                    <ul>
+                        <li>
+                            Client's mobile banking. <br />
+                            One-click payment confirmation required.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="yotta-info-column">
+                <div class="yotta-info-column-title">
+                    <span class="yotta-grey-span">Step</span> 4 / 4
+                </div>
+                <div class="yotta-info-column-img">
+                    <img src="step4.png" alt="step4.png" />
+                </div>
+                <div class="yotta-info-column-sub">
+                    <ul>
+                        <li>
+                            Client's mobile browser. Confirmation page
+                            with merchant business card and receipt.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="yotta-div yotta-skyrocket-div">
+        <div class="yotta-skyrocket-text">
+            <div class="yotta-title">
+                Provide seamless online experience while saving money
+            </div>
+            <div class="yotta-desc">
+                Low fees. No lock-in contract.<br />
+                No chargebacks. Cancel anytime.
+            </div>
+            <div class="yotta-divider"></div>
+            <div class="yotta-list">
+                <ul>
+                    <li>Up to ten times cheaper than card payment processors</li>
+                    <li>Fees as low as 0.19%</li>
+                    <li>Save thousands of pounds per year</li>
+                </ul>
+            </div>
+        </div>
+        <div class="yotta-skyrocket-img">
+            <img src="online-experience.png" alt="online-experience.png" />
+        </div>
+    </div>
+
+    <div class="yotta-div yotta-skyrocket-div">
+        <div class="yotta-more-text">
+            <div class="yotta-title">
+                Sell directly along all places you connect with customer
+            </div>
+            <div class="yotta-divider"></div>
+            <div class="yotta-list">
+                <ul>
+                    <li>Embed custom pay button in your application</li>
+                    <li>Add instant online checkout to your website or blog</li>
+                    <li>Let customers shop right from the social media apps</li>
+                    <li>Tailor the payment page to match your brand identity</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="yotta-div yotta-skyrocket-div">
+        <div class="yotta-skyrocket-img">
+            <img src="code.png" alt="code.png" />
+        </div>
+        <div class="yotta-skyrocket-text">
+            <div class="yotta-title">
+                Flexible, safe and robust integration
+            </div>
+            <div class="yotta-desc">
+                Yotta Pay Online Checkout is a preconfigured hosted payment solution. Set up and run using a few lines of code. Based on Open Banking, it’s fast and secure.
+            </div>
+            <div class="yotta-divider"></div>
+            <div class="yotta-list">
+                <ul>
+                    <li>Straightforward instructions</li>
+                    <li>Easy-to-use API</li>
+                    <li>Online support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="yotta-div">
+        <div class="yotta-center-text">
+            <div class="yotta-title">
+                Resources
+            </div>
+            <div class="yotta-desc">
+                <ul>
+                    <li>Yotta Pay Online Checkout Instrcution <span class="yotta-blue-span">https://yottapay.co.uk/paymentgateway/</span></li>
+                    <li>Yotta Pay Online payment processing API (1.0.0) reference <span class="yotta-blue-span">https://doc.yottapay.co.uk/</span></li>
+                    <li>Public SDK for Java (and Spring Boot) - see <span class="yotta-blue-span">https://github.com/yottapay</span></li>
+                    <li>Contact our support team <span class="yotta-blue-span">info@yottapay.co.uk</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
