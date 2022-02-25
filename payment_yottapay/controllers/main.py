@@ -8,7 +8,6 @@ from werkzeug import urls
 
 from odoo import http
 from odoo.http import request
-from odoo.addons.payment.controllers.portal import PaymentProcessing
 from odoo.addons.payment.models.payment_acquirer import ValidationError
 
 _logger = logging.getLogger(__name__)
