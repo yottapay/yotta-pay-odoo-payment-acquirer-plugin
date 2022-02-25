@@ -4,7 +4,7 @@
     'name': 'Yotta Pay Payment Acquirer',
     'category': 'Accounting/Payment Acquirers',
     'summary': 'Payment Acquirer: Yotta Pay Implementation',
-    'version': '1.0',
+    'version': '1.1',
     'description': """Yotta Pay Payment Acquirer""",
     'author': 'Yotta Digital Ltd',
     'maintainer': 'Yotta Digital Ltd',
